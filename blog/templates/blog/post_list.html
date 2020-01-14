@@ -5,6 +5,16 @@
   <body>
    <p>はい　この続きを自分で作る</p>
 
+   {% for p in posts %}
+    <div>
+      <p>published: {{ p.published_date}} </p>
+      <h2>{{p.title}}</h2>
+      <p>author: {{ p.author}}</p>
+      <p>{{p.text}}</p>
+
+    </div>
+   {% endfor %}
+
 
   </body>
 </html>
